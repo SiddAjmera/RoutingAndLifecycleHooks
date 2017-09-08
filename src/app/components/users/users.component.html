@@ -1,0 +1,22 @@
+<div class="container">
+	<h3>Users</h3>
+	
+	<input type="text" class="form-control" [(ngModel)]="userName"><br>
+	<button class="btn btn-primary" (click)="addUser()">Add User</button>
+	
+	<hr>
+	<div class="row">
+		<div class="col-md-5">
+			<ul class="list-group">
+				<li class="list-group-item"
+					*ngFor="let user of users">
+					<app-user [user]="user" (deleteUser)="deleteClicked($event)"></app-user>
+				</li>
+			</ul>
+		</div>
+
+		<div class="col-md-7">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>
