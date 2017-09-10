@@ -10,13 +10,13 @@
 			<ul class="list-group">
 				<li class="list-group-item"
 					*ngFor="let user of users">
-					<app-user [user]="user" (deleteUser)="deleteClicked($event)"></app-user>
+					<app-user [user]="user"></app-user>
 				</li>
 			</ul>
 		</div>
 
 		<div class="col-md-7">
-			<router-outlet></router-outlet>
+			<!--User a router outlet here-->
 		</div>
 	</div>
 </div>

@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { RoutingModule } from './routing/routing.module';
 import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
@@ -23,7 +22,6 @@ import { UserDetailComponent } from './components/user-detail/user-detail.compon
   ],
   imports: [
     BrowserModule,
-    RoutingModule,
     FormsModule
   ],
   providers: [],

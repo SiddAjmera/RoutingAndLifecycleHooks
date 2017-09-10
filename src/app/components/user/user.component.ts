@@ -7,11 +7,18 @@ import { User } from '../../models/user';
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css']
 })
-export class UserComponent implements OnChanges, OnInit, DoCheck, AfterContentInit, AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy {
+export class UserComponent {
 
 	@Input() user: User;
-	@Output() deleteUser: EventEmitter<string> = new EventEmitter<string>();
 
+	/**
+	 * Define an @Output Property that will handle the event emitted from this component.
+	 */
+
+	/**
+	 * Lifecycle Hooks
+	 */
+	/*
 	ngOnChanges() {
 		console.log('ngOnChanges called');
 	}
@@ -42,9 +49,9 @@ export class UserComponent implements OnChanges, OnInit, DoCheck, AfterContentIn
 
 	ngOnDestroy() {
 		console.log('ngOnDestroy called');
-	}
+	}*/
 
-	delete(userName: string) {
-		this.deleteUser.emit(userName);
-	}
+	/**
+	 * Define a function that will handle the delete icon clicked on this template.
+	 */
 }
